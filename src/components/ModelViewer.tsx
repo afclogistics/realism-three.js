@@ -8,7 +8,7 @@ import { PostProcessing } from './PostProcessing';
 import { PostProcessing2 } from './postprocessing2';
 
 import { DropZone } from './DropZone';
-import { Environment } from '@react-three/drei';
+import { Environment, SoftShadows } from '@react-three/drei';
 import ReflectivePlane from './ReflectivePlane'; 
 import { Rings } from './Rings';
 import { Boxes } from './Boxes';
@@ -80,12 +80,17 @@ export default function ModelViewer() {
           </group>
         )}
         <Environment 
-          preset="warehouse" 
+          preset="sunset" 
           background 
           backgroundBlurriness={0.1} 
         />
         
-        {/* <Lighting />  */}
+        <Lighting />
+        <SoftShadows 
+            size={40} // Size of the shadow map (default: 10)
+            focus={0.2} // Focus of the shadow (default: 0)
+            samples={17} // Number of samples (default: 16)
+        /> 
         
 
         <mesh 

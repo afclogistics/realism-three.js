@@ -13,11 +13,12 @@ export function Lighting() {
     <>
       <directionalLight
         ref={lightRef}
-        // color="cdfdff"
-        position={[5, 15, 5]}
-        intensity={4.5}
+        color="#ffd7c4"//ffd7c4 <dawn, eaccc6 <sunset
+        position={[18, 19, 5]}
+        // position={[15, 15, 15]}
+        intensity={7.5}
         castShadow
-        shadow-bias={-0.01}
+        shadow-bias={-0.001}
         shadow-mapSize={[4096, 4096]}
         shadow-camera-near={0.5}
         shadow-camera-far={50}
@@ -26,12 +27,12 @@ export function Lighting() {
         shadow-camera-top={40}
         shadow-camera-bottom={-40}
       />
-      <ambientLight intensity={.0} />
+      {/* <ambientLight intensity={.0} />
       <hemisphereLight
         intensity={0.5}
         color="#ffffff"
         groundColor="#444444"
-      />
+      /> */}
     </>
   );
 }
