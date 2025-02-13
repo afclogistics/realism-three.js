@@ -6,3 +6,4 @@
 npm install<br>
 npm run dev<br>
 <a href="https://drive.google.com/drive/u/2/folders/1W5SZwifKhzMEBDdKp7BC3gN_IENm0NNU">.glb models</a>
+drag and drop these models once the locanhost is up in the browser.
